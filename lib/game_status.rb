@@ -74,3 +74,12 @@ def winner(board)
     nil
   end
 end
+
+board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+def won1?(board)
+  WIN_COMBINATIONS.detect do |combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(board, combo[0])
+  end
+end
