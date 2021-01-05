@@ -81,10 +81,7 @@ def won1?(board)
     board[combo[0]] == board[combo[1]] &&
     board[combo[1]] == board[combo[2]] &&
     position_taken?(board, combo[0])
-    puts "#{combo[0]}"
-    puts "---"
     puts "#{combo[1]}"
-    puts "---"
   end
 end
 won1?(board)
