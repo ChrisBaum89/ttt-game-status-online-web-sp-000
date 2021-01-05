@@ -84,3 +84,4 @@ def won1?(board)
     puts "#{combo[0]}"
   end
 end
+won1?(board)
